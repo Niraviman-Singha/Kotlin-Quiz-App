@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/blue_color_background"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Kotlin Quiz App"
+                android:textStyle="bold"
+                android:textColor="#73110A"
+                android:backgroundTint="#CC7979"
+                android:textSize="35sp"
+                app:cornerRadius="8dp"
+                app:strokeColor="#E91E63"
+                app:strokeWidth="3dp">
+
+            </Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="1.Which collection type ensures element uniqueness in Kotlin?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) Set">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option2"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) List">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option3"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) Map">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option4"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) MutableList">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="2. Which of the following is true about Kotlin?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup2"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) It is a functional programming language">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option6"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) It is a scripting language">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option7"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) It is a procedural programming language">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option8"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) It is an object-oriented programming language">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="3.Which of the following is a feature of Kotlin?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup3"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) Checked exceptions">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option10"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) Null pointer exceptions">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option11"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) Extension functions">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option12"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) Multiple inheritance">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="4.Which of the following is true about Kotlin’s null safety?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup4"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) Kotlin does not allow null values">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option14"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) Kotlin uses the ! operator to denote nullability">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option15"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) Kotlin uses the ? operator to denote nullability">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option16"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) Kotlin uses the ?? operator to denote nullability">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="5.What is a lambda in Kotlin?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup5"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) A function that is passed as an argument to another function">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option18"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) A class that is used to represent data structures">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option19"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) A type of variable in Kotlin">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option20"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) A keyword used to define classes">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="6.Which of the following is true about Kotlin’s when expression?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup6"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) It is similar to the switch statement in Java">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option22"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) It is used to declare variables">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option23"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) It can only be used with Boolean values">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option24"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) It is used to handle exceptions">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="7.Which of the following is true about the lazy initialization in Kotlin?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup7"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) It is used to delay the initialization of a variable until it is accessed for the first time">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option26"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) It is used to declare a variable as immutable">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option27"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) It is used to initialize a variable with a default value">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option28"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) It is used to perform a null-check on a variable">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="8.What is the purpose of the lateinit keyword in Kotlin?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup8"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) To declare a variable as lazy-initialized">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option30"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) To declare a variable as immutable">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option31"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) To declare a variable as mutable">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option32"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) To declare a variable as initialized later">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="9. All classes in Kotlin classes are by default?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup9"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) public">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option34"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) final">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option35"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) sealed">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option36"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) abstract">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="10.What is an immutable variable?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup10"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) A variable used for string interpolation">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option38"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) A variable that can be changed">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option39"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) A variable that cannot change, read-only">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option40"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) None of the above">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="11. Which of following option is used to handle null exceptions in Kotlin?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup11"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) Range">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option42"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) Elvis Operator">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option43"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) Sealed Class">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option44"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) Lambda function">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="12.Does Kotlin support primitive Datatypes?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup12"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) Yes">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option46"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) No">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option47"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) Can be yes or no">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option48"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) Can not say">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="13.Which of th following is used to compare two strings in Kotlin?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup13"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) Using == operator">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option50"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) Using compareTo() extension function">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option51"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) Both A and B">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option52"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) None of the above">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#681010"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="14.Kotlin was developed by?">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rgroup14"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="a) IBM">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option54"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="b) NetBeans">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option55"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="c) JetBrains">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/option56"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="d) Oracle">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
